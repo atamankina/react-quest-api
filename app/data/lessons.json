@@ -1,26 +1,162 @@
 [
   {
-    "id": "react-intro",
+    "id": "lesson-01",
     "title": "Was ist React?",
     "topic": "Grundlagen",
     "type": "Theorie",
     "level": "Einfach",
-    "content": "React ist eine JavaScript-Bibliothek, mit der wir Benutzeroberflächen aus Komponenten zusammensetzen."
+    "content": "React ist eine JavaScript-Bibliothek zur Entwicklung von Benutzeroberflächen. Sie hilft dabei, UI in Komponenten zu strukturieren."
   },
   {
-    "id": "components",
+    "id": "lesson-02",
+    "title": "Warum React verwenden?",
+    "topic": "Grundlagen",
+    "type": "Theorie",
+    "level": "Einfach",
+    "content": "React ist nützlich, weil es komponentenbasiert ist, Wiederverwendbarkeit fördert und die Entwicklung dynamischer Oberflächen vereinfacht."
+  },
+  {
+    "id": "lesson-03",
+    "title": "Was ist JSX?",
+    "topic": "JSX",
+    "type": "Theorie",
+    "level": "Einfach",
+    "content": "JSX ist eine Syntaxerweiterung für JavaScript. Sie sieht HTML ähnlich, wird aber in React verwendet, um UI zu beschreiben."
+  },
+  {
+    "id": "lesson-04",
     "title": "Komponenten verstehen",
     "topic": "Komponenten",
     "type": "Theorie",
     "level": "Einfach",
-    "content": "Komponenten sind wiederverwendbare Bausteine. Sie helfen uns, UI in kleine, klare Teile aufzuteilen."
+    "content": "Komponenten sind wiederverwendbare UI-Bausteine. Sie machen große Anwendungen besser strukturierbar."
   },
   {
-    "id": "props",
-    "title": "Props in React",
-    "topic": "Datenfluss",
+    "id": "lesson-05",
+    "title": "Funktionskomponenten",
+    "topic": "Komponenten",
+    "type": "Theorie",
+    "level": "Einfach",
+    "content": "In modernen React-Anwendungen werden meist Funktionskomponenten verwendet. Sie sind kompakt und arbeiten gut mit Hooks zusammen."
+  },
+  {
+    "id": "lesson-06",
+    "title": "Props: Daten an Komponenten übergeben",
+    "topic": "Props",
+    "type": "Theorie",
+    "level": "Einfach",
+    "content": "Props sind Eingaben für Komponenten. Eine Elternkomponente kann damit Daten an eine Kindkomponente weitergeben."
+  },
+  {
+    "id": "lesson-07",
+    "title": "Was ist State?",
+    "topic": "State",
     "type": "Theorie",
     "level": "Mittel",
-    "content": "Props sind Eingaben für Komponenten. Eine Elternkomponente gibt Daten an eine Kindkomponente weiter."
+    "content": "State speichert veränderliche Daten in einer Komponente. Wenn State geändert wird, rendert React die UI erneut."
+  },
+  {
+    "id": "lesson-08",
+    "title": "useState verwenden",
+    "topic": "Hooks",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "useState ist ein Hook, mit dem man State in Funktionskomponenten verwalten kann."
+  },
+  {
+    "id": "lesson-09",
+    "title": "Event-Handling in React",
+    "topic": "Events",
+    "type": "Theorie",
+    "level": "Einfach",
+    "content": "Mit Event-Handlern wie onClick reagiert eine React-Komponente auf Benutzeraktionen."
+  },
+  {
+    "id": "lesson-10",
+    "title": "Listen mit map() rendern",
+    "topic": "Rendering",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Wenn mehrere ähnliche Elemente angezeigt werden sollen, kann man ein Array mit map() in JSX rendern."
+  },
+  {
+    "id": "lesson-11",
+    "title": "Warum keys wichtig sind",
+    "topic": "Rendering",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Beim Rendern von Listen braucht React stabile keys, damit Änderungen an Elementen korrekt erkannt werden."
+  },
+  {
+    "id": "lesson-12",
+    "title": "Conditional Rendering",
+    "topic": "Rendering",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Mit Conditional Rendering werden UI-Elemente nur unter bestimmten Bedingungen angezeigt."
+  },
+  {
+    "id": "lesson-13",
+    "title": "Was macht useEffect?",
+    "topic": "Hooks",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "useEffect wird verwendet, um mit externen Systemen zu synchronisieren, zum Beispiel mit APIs oder Timern."
+  },
+  {
+    "id": "lesson-14",
+    "title": "Daten aus einer API laden",
+    "topic": "API",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Mit fetch und useEffect kann eine React-App Daten von einem Backend laden und dann in der UI anzeigen."
+  },
+  {
+    "id": "lesson-15",
+    "title": "State im Parent verwalten",
+    "topic": "State",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Wenn mehrere Komponenten denselben Zustand brauchen, wird dieser oft in einer gemeinsamen Elternkomponente verwaltet."
+  },
+  {
+    "id": "lesson-16",
+    "title": "Props und Datenfluss",
+    "topic": "Props",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "In React fließen Daten typischerweise von oben nach unten: von Elternkomponenten zu Kindkomponenten."
+  },
+  {
+    "id": "lesson-17",
+    "title": "Formulare und Inputs in React",
+    "topic": "Forms",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Mit controlled components können Eingabefelder in React über State gesteuert werden."
+  },
+  {
+    "id": "lesson-18",
+    "title": "Komponenten strukturieren",
+    "topic": "Architektur",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Eine gute React-Struktur trennt Komponenten nach Verantwortung, damit die Anwendung lesbarer und wartbarer bleibt."
+  },
+  {
+    "id": "lesson-19",
+    "title": "Quiz-Logik mit React bauen",
+    "topic": "Praxis",
+    "type": "Theorie",
+    "level": "Mittel",
+    "content": "Ein Quiz in React braucht zum Beispiel State für Auswahl, Feedback, Punktestand und aktuelle Frage."
+  },
+  {
+    "id": "lesson-20",
+    "title": "React und Wiederverwendbarkeit",
+    "topic": "Komponenten",
+    "type": "Theorie",
+    "level": "Fortgeschritten",
+    "content": "Wiederverwendbare Komponenten sparen Zeit, reduzieren Duplikate und machen UI-Entwicklung konsistenter."
   }
 ]
