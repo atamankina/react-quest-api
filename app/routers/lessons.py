@@ -1,11 +1,12 @@
 from fastapi import APIRouter
 
-from app.services.file_service import read_json
-from app.core.config import LESSONS_FILE
-from app.models.lesson import Lesson
+from app.core.mongo import get_lessons_collection
+from app.schemas.lesson import LessonRead
 
 router = APIRouter(prefix="/lessons", tags=["lessons"])
 
-@router.get("/", response_model=list[Lesson])
+@router.get("/", response_model=list[LessonRead])
 def get_lessons():
-    return read_json(LESSONS_FILE)
+    collection = get_lessons_collection()
+    lessons = list(collection.find({}, {"_id": 0}))
+    return lessons

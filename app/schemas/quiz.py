@@ -1,14 +1,14 @@
 from pydantic import BaseModel
 
 
-class AnswerOption(BaseModel):
+class AnswerOptionRead(BaseModel):
     id: str
     text: str
     isCorrect: bool
 
 
-class QuizQuestion(BaseModel):
+class QuizQuestionRead(BaseModel):
     id: str
     question: str
-    answers: list[AnswerOption]
+    answers: list[AnswerOptionRead]
     explanation: str

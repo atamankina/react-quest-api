@@ -1,12 +1,13 @@
 from fastapi import APIRouter
 
-from app.services.file_service import read_json
-from app.core.config import QUIZ_FILE
-from app.models.quiz import QuizQuestion
+from app.core.mongo import get_quiz_collection
+from app.schemas.quiz import QuizQuestionRead
 
 router = APIRouter(prefix="/quiz-questions", tags=["quiz"])
 
 
-@router.get("/", response_model=list[QuizQuestion])
+@router.get("/", response_model=list[QuizQuestionRead])
 def get_quiz_questions():
-    return read_json(QUIZ_FILE)
+    collection = get_quiz_collection()
+    questions = list(collection.find({}, {"_id": 0}))
+    return questions

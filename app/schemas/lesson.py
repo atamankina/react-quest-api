@@ -1,7 +1,7 @@
 from pydantic import BaseModel
 
 
-class Lesson(BaseModel):
+class LessonRead(BaseModel):
     id: str
     title: str
     topic: str
