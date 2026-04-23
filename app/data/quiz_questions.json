@@ -1,56 +1,332 @@
 [
   {
-    "id": "q1",
-    "question": "Wofür werden Props in React verwendet?",
+    "id": "q01",
+    "question": "Wofür wird React hauptsächlich verwendet?",
     "answers": [
-      {
-        "id": "q1-a1",
-        "text": "Um Pakete mit npm zu installieren",
-        "isCorrect": false
-      },
-      {
-        "id": "q1-a2",
-        "text": "Um Daten von einer Elternkomponente an eine Kindkomponente weiterzugeben",
-        "isCorrect": true
-      },
-      {
-        "id": "q1-a3",
-        "text": "Um CSS-Dateien automatisch zu erzeugen",
-        "isCorrect": false
-      },
-      {
-        "id": "q1-a4",
-        "text": "Um den Browser neu zu starten",
-        "isCorrect": false
-      }
+      { "id": "q01-a1", "text": "Zum Erstellen von Benutzeroberflächen", "isCorrect": true },
+      { "id": "q01-a2", "text": "Zum direkten Verwalten von Datenbanken", "isCorrect": false },
+      { "id": "q01-a3", "text": "Zum Kompilieren von Python-Code", "isCorrect": false },
+      { "id": "q01-a4", "text": "Zum Ersetzen von CSS", "isCorrect": false }
     ],
-    "explanation": "Props sind Eingaben für Komponenten. So können Daten von oben nach unten weitergegeben werden."
+    "explanation": "React ist eine Bibliothek zur Entwicklung von Benutzeroberflächen."
   },
   {
-    "id": "q2",
-    "question": "Warum ist eine eigene Komponente wie LessonList sinnvoll?",
+    "id": "q02",
+    "question": "Was ist eine Komponente in React?",
     "answers": [
-      {
-        "id": "q2-a1",
-        "text": "Weil React ohne LessonList nicht startet",
-        "isCorrect": false
-      },
-      {
-        "id": "q2-a2",
-        "text": "Weil App sonst zu viele Aufgaben übernimmt",
-        "isCorrect": true
-      },
-      {
-        "id": "q2-a3",
-        "text": "Weil Tailwind nur in LessonList funktioniert",
-        "isCorrect": false
-      },
-      {
-        "id": "q2-a4",
-        "text": "Weil map() nur in separaten Dateien erlaubt ist",
-        "isCorrect": false
-      }
+      { "id": "q02-a1", "text": "Ein wiederverwendbarer UI-Baustein", "isCorrect": true },
+      { "id": "q02-a2", "text": "Eine Datenbanktabelle", "isCorrect": false },
+      { "id": "q02-a3", "text": "Ein CSS-Selektor", "isCorrect": false },
+      { "id": "q02-a4", "text": "Ein spezieller Git-Branch", "isCorrect": false }
     ],
-    "explanation": "Wir teilen Verantwortung auf. App bleibt übersichtlich, LessonList kümmert sich um die Kartenliste."
+    "explanation": "Komponenten sind wiederverwendbare Teile einer Benutzeroberfläche."
+  },
+  {
+    "id": "q03",
+    "question": "Was ist JSX?",
+    "answers": [
+      { "id": "q03-a1", "text": "Eine Syntaxerweiterung für JavaScript zur Beschreibung von UI", "isCorrect": true },
+      { "id": "q03-a2", "text": "Ein Ersatz für HTML-Dateien im Browser", "isCorrect": false },
+      { "id": "q03-a3", "text": "Ein Datenbankformat", "isCorrect": false },
+      { "id": "q03-a4", "text": "Ein React-Hook", "isCorrect": false }
+    ],
+    "explanation": "JSX sieht HTML ähnlich, wird aber in JavaScript verwendet."
+  },
+  {
+    "id": "q04",
+    "question": "Was sind Props in React?",
+    "answers": [
+      { "id": "q04-a1", "text": "Daten, die an eine Komponente übergeben werden", "isCorrect": true },
+      { "id": "q04-a2", "text": "Nur interne Werte einer Komponente", "isCorrect": false },
+      { "id": "q04-a3", "text": "Ein React-Router-Mechanismus", "isCorrect": false },
+      { "id": "q04-a4", "text": "Automatisch generierte CSS-Klassen", "isCorrect": false }
+    ],
+    "explanation": "Props sind Eingaben für Komponenten."
+  },
+  {
+    "id": "q05",
+    "question": "Wofür wird useState verwendet?",
+    "answers": [
+      { "id": "q05-a1", "text": "Zum Speichern veränderlicher Werte in einer Komponente", "isCorrect": true },
+      { "id": "q05-a2", "text": "Zum Laden von Bildern", "isCorrect": false },
+      { "id": "q05-a3", "text": "Zum Definieren von API-Endpunkten", "isCorrect": false },
+      { "id": "q05-a4", "text": "Zum Importieren von Komponenten", "isCorrect": false }
+    ],
+    "explanation": "useState verwaltet State in Funktionskomponenten."
+  },
+  {
+    "id": "q06",
+    "question": "Was passiert typischerweise, wenn sich State ändert?",
+    "answers": [
+      { "id": "q06-a1", "text": "React rendert die betroffene UI erneut", "isCorrect": true },
+      { "id": "q06-a2", "text": "Die Komponente wird dauerhaft gelöscht", "isCorrect": false },
+      { "id": "q06-a3", "text": "Die CSS-Dateien werden neu erzeugt", "isCorrect": false },
+      { "id": "q06-a4", "text": "Alle Props verschwinden", "isCorrect": false }
+    ],
+    "explanation": "State-Änderungen führen normalerweise zu einem neuen Render."
+  },
+  {
+    "id": "q07",
+    "question": "Wofür wird useEffect häufig verwendet?",
+    "answers": [
+      { "id": "q07-a1", "text": "Zum Synchronisieren mit externen Systemen wie APIs", "isCorrect": true },
+      { "id": "q07-a2", "text": "Zum Ersetzen von JSX", "isCorrect": false },
+      { "id": "q07-a3", "text": "Zum direkten Ändern von Props", "isCorrect": false },
+      { "id": "q07-a4", "text": "Zum Erzeugen von Komponenten ohne Rendering", "isCorrect": false }
+    ],
+    "explanation": "useEffect wird zum Beispiel für API-Aufrufe oder andere Seiteneffekte genutzt."
+  },
+  {
+    "id": "q08",
+    "question": "Warum verwenden wir map() beim Rendern von Listen?",
+    "answers": [
+      { "id": "q08-a1", "text": "Um aus einem Datenarray mehrere UI-Elemente zu erzeugen", "isCorrect": true },
+      { "id": "q08-a2", "text": "Um automatisch State zu speichern", "isCorrect": false },
+      { "id": "q08-a3", "text": "Um Hooks zu ersetzen", "isCorrect": false },
+      { "id": "q08-a4", "text": "Um CSS-Dateien zu strukturieren", "isCorrect": false }
+    ],
+    "explanation": "map() ist ideal, um mehrere ähnliche UI-Elemente auf Basis eines Arrays zu rendern."
+  },
+  {
+    "id": "q09",
+    "question": "Warum braucht React beim Rendern von Listen einen key?",
+    "answers": [
+      { "id": "q09-a1", "text": "Damit React Elemente eindeutig unterscheiden kann", "isCorrect": true },
+      { "id": "q09-a2", "text": "Damit JSX gültig bleibt", "isCorrect": false },
+      { "id": "q09-a3", "text": "Damit useEffect funktioniert", "isCorrect": false },
+      { "id": "q09-a4", "text": "Damit Props automatisch gesetzt werden", "isCorrect": false }
+    ],
+    "explanation": "Ein stabiler key hilft React, Listenelemente korrekt zu verfolgen."
+  },
+  {
+    "id": "q10",
+    "question": "Was bedeutet Conditional Rendering?",
+    "answers": [
+      { "id": "q10-a1", "text": "Bestimmte UI-Elemente werden nur unter Bedingungen angezeigt", "isCorrect": true },
+      { "id": "q10-a2", "text": "React rendert immer alles doppelt", "isCorrect": false },
+      { "id": "q10-a3", "text": "Komponenten dürfen nur mit if-Anweisungen importiert werden", "isCorrect": false },
+      { "id": "q10-a4", "text": "Nur CSS wird bedingt geladen", "isCorrect": false }
+    ],
+    "explanation": "Conditional Rendering zeigt Inhalte abhängig von Bedingungen an."
+  },
+  {
+    "id": "q11",
+    "question": "Welche Aussage zu Props ist richtig?",
+    "answers": [
+      { "id": "q11-a1", "text": "Props fließen typischerweise von Eltern- zu Kindkomponenten", "isCorrect": true },
+      { "id": "q11-a2", "text": "Props werden direkt in der Kindkomponente erstellt und an den Parent zurückgegeben", "isCorrect": false },
+      { "id": "q11-a3", "text": "Props ersetzen JSX", "isCorrect": false },
+      { "id": "q11-a4", "text": "Props sind immer Zahlen", "isCorrect": false }
+    ],
+    "explanation": "In React ist der Datenfluss über Props typischerweise top-down."
+  },
+  {
+    "id": "q12",
+    "question": "Welche Aussage über State ist richtig?",
+    "answers": [
+      { "id": "q12-a1", "text": "State speichert veränderliche Daten innerhalb einer Komponente", "isCorrect": true },
+      { "id": "q12-a2", "text": "State ist nur für CSS zuständig", "isCorrect": false },
+      { "id": "q12-a3", "text": "State wird ausschließlich im Backend verwaltet", "isCorrect": false },
+      { "id": "q12-a4", "text": "State kann nicht mit useState verwendet werden", "isCorrect": false }
+    ],
+    "explanation": "State beschreibt veränderliche Werte der UI."
+  },
+  {
+    "id": "q13",
+    "question": "Was ist ein Event-Handler in React?",
+    "answers": [
+      { "id": "q13-a1", "text": "Eine Funktion, die auf Benutzeraktionen reagiert", "isCorrect": true },
+      { "id": "q13-a2", "text": "Eine Datei zum Speichern von Komponenten", "isCorrect": false },
+      { "id": "q13-a3", "text": "Ein spezieller Hook für Datenbanken", "isCorrect": false },
+      { "id": "q13-a4", "text": "Eine JSON-Struktur", "isCorrect": false }
+    ],
+    "explanation": "Event-Handler reagieren auf Ereignisse wie Klicks oder Eingaben."
+  },
+  {
+    "id": "q14",
+    "question": "Was ist eine Funktionskomponente?",
+    "answers": [
+      { "id": "q14-a1", "text": "Eine React-Komponente, die als Funktion geschrieben ist", "isCorrect": true },
+      { "id": "q14-a2", "text": "Eine CSS-Funktion für Tailwind", "isCorrect": false },
+      { "id": "q14-a3", "text": "Eine Datenbankfunktion", "isCorrect": false },
+      { "id": "q14-a4", "text": "Ein spezieller HTML-Tag", "isCorrect": false }
+    ],
+    "explanation": "Moderne React-Komponenten sind oft Funktionskomponenten."
+  },
+  {
+    "id": "q15",
+    "question": "Warum ist Wiederverwendbarkeit in React wichtig?",
+    "answers": [
+      { "id": "q15-a1", "text": "Weil dieselbe Komponente mehrfach mit unterschiedlichen Daten genutzt werden kann", "isCorrect": true },
+      { "id": "q15-a2", "text": "Weil dadurch keine Dateien mehr nötig sind", "isCorrect": false },
+      { "id": "q15-a3", "text": "Weil React sonst nicht kompiliert", "isCorrect": false },
+      { "id": "q15-a4", "text": "Weil jede Komponente nur einmal im Projekt existieren darf", "isCorrect": false }
+    ],
+    "explanation": "Wiederverwendbare Komponenten sparen Zeit und reduzieren Duplikate."
+  },
+  {
+    "id": "q16",
+    "question": "Wann ist es sinnvoll, State in einer Elternkomponente zu speichern?",
+    "answers": [
+      { "id": "q16-a1", "text": "Wenn mehrere Kindkomponenten denselben Zustand brauchen", "isCorrect": true },
+      { "id": "q16-a2", "text": "Nur wenn JSX nicht funktioniert", "isCorrect": false },
+      { "id": "q16-a3", "text": "Nur bei CSS-Problemen", "isCorrect": false },
+      { "id": "q16-a4", "text": "Wenn keine Props verwendet werden dürfen", "isCorrect": false }
+    ],
+    "explanation": "Gemeinsamer Zustand wird oft in einer gemeinsamen Elternkomponente verwaltet."
+  },
+  {
+    "id": "q17",
+    "question": "Was ist der Vorteil von controlled components bei Formularen?",
+    "answers": [
+      { "id": "q17-a1", "text": "Der aktuelle Wert eines Inputs wird durch React-State gesteuert", "isCorrect": true },
+      { "id": "q17-a2", "text": "Das Formular braucht dann kein JSX mehr", "isCorrect": false },
+      { "id": "q17-a3", "text": "Alle Eingaben werden automatisch in einer Datenbank gespeichert", "isCorrect": false },
+      { "id": "q17-a4", "text": "React ersetzt HTML-Inputs vollständig", "isCorrect": false }
+    ],
+    "explanation": "Controlled components machen Eingaben in React kontrollierbar und nachvollziehbar."
+  },
+  {
+    "id": "q18",
+    "question": "Wofür ist fetch in einer React-App nützlich?",
+    "answers": [
+      { "id": "q18-a1", "text": "Zum Laden von Daten aus einer API", "isCorrect": true },
+      { "id": "q18-a2", "text": "Zum direkten Ändern von Props", "isCorrect": false },
+      { "id": "q18-a3", "text": "Zum Erstellen von Komponenten", "isCorrect": false },
+      { "id": "q18-a4", "text": "Zum Ersetzen von useState", "isCorrect": false }
+    ],
+    "explanation": "fetch wird häufig verwendet, um Daten von einem Backend zu laden."
+  },
+  {
+    "id": "q19",
+    "question": "Warum kombinieren wir fetch oft mit useEffect?",
+    "answers": [
+      { "id": "q19-a1", "text": "Weil Daten beim Laden oder bei Änderungen automatisch angefragt werden können", "isCorrect": true },
+      { "id": "q19-a2", "text": "Weil fetch nur in JSX funktioniert", "isCorrect": false },
+      { "id": "q19-a3", "text": "Weil useEffect automatisch CSS lädt", "isCorrect": false },
+      { "id": "q19-a4", "text": "Weil map() sonst nicht verfügbar ist", "isCorrect": false }
+    ],
+    "explanation": "useEffect ist ein typischer Ort für API-Aufrufe."
+  },
+  {
+    "id": "q20",
+    "question": "Welche Aussage zu JSX ist richtig?",
+    "answers": [
+      { "id": "q20-a1", "text": "JSX erlaubt es, UI direkt im JavaScript-Code zu beschreiben", "isCorrect": true },
+      { "id": "q20-a2", "text": "JSX ist eine Datenbankabfragesprache", "isCorrect": false },
+      { "id": "q20-a3", "text": "JSX ersetzt JavaScript vollständig", "isCorrect": false },
+      { "id": "q20-a4", "text": "JSX ist nur für Styling gedacht", "isCorrect": false }
+    ],
+    "explanation": "JSX verbindet JavaScript und UI-Beschreibung."
+  },
+  {
+    "id": "q21",
+    "question": "Was ist in React typischerweise eine gute Komponentenstruktur?",
+    "answers": [
+      { "id": "q21-a1", "text": "Eine Struktur, bei der Komponenten nach Verantwortung getrennt sind", "isCorrect": true },
+      { "id": "q21-a2", "text": "Alle UI-Elemente in einer einzigen Datei", "isCorrect": false },
+      { "id": "q21-a3", "text": "Alle Daten direkt in jede Komponente kopieren", "isCorrect": false },
+      { "id": "q21-a4", "text": "Nur Komponenten mit über 500 Zeilen verwenden", "isCorrect": false }
+    ],
+    "explanation": "Eine gute Struktur macht Komponenten übersichtlich und wartbar."
+  },
+  {
+    "id": "q22",
+    "question": "Warum ist es sinnvoll, Daten und Darstellung zu trennen?",
+    "answers": [
+      { "id": "q22-a1", "text": "Weil Komponenten so flexibler und wiederverwendbarer werden", "isCorrect": true },
+      { "id": "q22-a2", "text": "Weil React sonst keine Event-Handler erlaubt", "isCorrect": false },
+      { "id": "q22-a3", "text": "Weil JSX keine Texte darstellen kann", "isCorrect": false },
+      { "id": "q22-a4", "text": "Weil State nur in JSON-Dateien gespeichert werden darf", "isCorrect": false }
+    ],
+    "explanation": "Getrennte Daten und Darstellung erleichtern Erweiterung und Wartung."
+  },
+  {
+    "id": "q23",
+    "question": "Was ist ein typischer Zweck einer Parent-Komponente wie App?",
+    "answers": [
+      { "id": "q23-a1", "text": "Größere Bausteine zusammensetzen und gemeinsamen Zustand verwalten", "isCorrect": true },
+      { "id": "q23-a2", "text": "Alle CSS-Regeln definieren", "isCorrect": false },
+      { "id": "q23-a3", "text": "Nur einzelne Buttons rendern", "isCorrect": false },
+      { "id": "q23-a4", "text": "Die Datenbank direkt ansprechen", "isCorrect": false }
+    ],
+    "explanation": "App ist oft die Komponente, die größere UI-Bereiche zusammenführt."
+  },
+  {
+    "id": "q24",
+    "question": "Welche Aussage zu Props und State ist richtig?",
+    "answers": [
+      { "id": "q24-a1", "text": "Props kommen typischerweise von außen, State gehört zur Komponente", "isCorrect": true },
+      { "id": "q24-a2", "text": "Props und State sind in React genau dasselbe", "isCorrect": false },
+      { "id": "q24-a3", "text": "State wird immer über Props ersetzt", "isCorrect": false },
+      { "id": "q24-a4", "text": "Props dürfen nicht in JSX verwendet werden", "isCorrect": false }
+    ],
+    "explanation": "Props und State haben unterschiedliche Rollen in React."
+  },
+  {
+    "id": "q25",
+    "question": "Warum ist onClick in React oft nützlich?",
+    "answers": [
+      { "id": "q25-a1", "text": "Weil damit auf Klicks des Benutzers reagiert werden kann", "isCorrect": true },
+      { "id": "q25-a2", "text": "Weil es automatisch Daten vom Backend lädt", "isCorrect": false },
+      { "id": "q25-a3", "text": "Weil es JSX ersetzt", "isCorrect": false },
+      { "id": "q25-a4", "text": "Weil damit Props generiert werden", "isCorrect": false }
+    ],
+    "explanation": "onClick ist ein typischer Event-Handler für Buttons."
+  },
+  {
+    "id": "q26",
+    "question": "Was ist ein guter Grund, eine Quizfrage als Objekt zu modellieren?",
+    "answers": [
+      { "id": "q26-a1", "text": "Weil man Frage, Antworten und Erklärung sauber zusammenfassen kann", "isCorrect": true },
+      { "id": "q26-a2", "text": "Weil React nur mit Objekten und nicht mit Arrays arbeiten kann", "isCorrect": false },
+      { "id": "q26-a3", "text": "Weil JSX keine Strings darstellen kann", "isCorrect": false },
+      { "id": "q26-a4", "text": "Weil useEffect nur Objekte akzeptiert", "isCorrect": false }
+    ],
+    "explanation": "Objekte helfen, zusammengehörige Daten logisch zu bündeln."
+  },
+  {
+    "id": "q27",
+    "question": "Warum ist eine Antwortstruktur mit id und text praktisch?",
+    "answers": [
+      { "id": "q27-a1", "text": "Weil jede Antwort eindeutig identifizierbar ist und der Text getrennt bleibt", "isCorrect": true },
+      { "id": "q27-a2", "text": "Weil React sonst keine Buttons rendern kann", "isCorrect": false },
+      { "id": "q27-a3", "text": "Weil props keine Strings transportieren dürfen", "isCorrect": false },
+      { "id": "q27-a4", "text": "Weil onClick nur mit IDs funktioniert", "isCorrect": false }
+    ],
+    "explanation": "Eine eigene ID macht Antworten robuster und klarer modelliert."
+  },
+  {
+    "id": "q28",
+    "question": "Was ist ein sinnvoller erster Schritt beim Entwickeln einer React-App?",
+    "answers": [
+      { "id": "q28-a1", "text": "Zuerst eine kleine, verständliche und funktionierende Version bauen", "isCorrect": true },
+      { "id": "q28-a2", "text": "Sofort alle Features gleichzeitig implementieren", "isCorrect": false },
+      { "id": "q28-a3", "text": "Erst das Backend schreiben, auch wenn die UI noch unklar ist", "isCorrect": false },
+      { "id": "q28-a4", "text": "Auf Komponenten komplett verzichten", "isCorrect": false }
+    ],
+    "explanation": "Ein kleiner MVP ist oft der sinnvollste Start."
+  },
+  {
+    "id": "q29",
+    "question": "Warum ist Wiederholung derselben Logik in vielen Komponenten problematisch?",
+    "answers": [
+      { "id": "q29-a1", "text": "Weil der Code schwerer wartbar und weniger übersichtlich wird", "isCorrect": true },
+      { "id": "q29-a2", "text": "Weil React gleiche Funktionen grundsätzlich verbietet", "isCorrect": false },
+      { "id": "q29-a3", "text": "Weil JSX dann nicht mehr kompiliert", "isCorrect": false },
+      { "id": "q29-a4", "text": "Weil map() dadurch deaktiviert wird", "isCorrect": false }
+    ],
+    "explanation": "Duplizierte Logik erschwert Wartung und Weiterentwicklung."
+  },
+  {
+    "id": "q30",
+    "question": "Was ist ein typischer Vorteil von React für Lernprojekte?",
+    "answers": [
+      { "id": "q30-a1", "text": "Man kann UI, Zustand und Interaktion gut sichtbar Schritt für Schritt aufbauen", "isCorrect": true },
+      { "id": "q30-a2", "text": "React ersetzt automatisch Datenbanken und APIs", "isCorrect": false },
+      { "id": "q30-a3", "text": "React braucht keine JavaScript-Kenntnisse", "isCorrect": false },
+      { "id": "q30-a4", "text": "Mit React muss man keine Komponenten mehr verstehen", "isCorrect": false }
+    ],
+    "explanation": "React eignet sich gut, um komponentenbasiertes Denken und UI-Logik zu lernen."
   }
 ]
